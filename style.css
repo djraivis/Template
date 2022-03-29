@@ -1,0 +1,120 @@
+:root {
+    /* R O O T  C O L O R S */
+    --body-root-color: rgb(53, 51, 54);
+    --body-color-light: rgba(236, 229, 243, 0.438);
+    --body-color-dark: rgb(51, 54, 54);
+    --text-color-cight: aliceblue;
+    --text-color-dark: rgba(29, 27, 27, 0.658);
+    --bubble-gum: hsl(330.6, 90.3%, 92.5%);
+    --lavendar: hsl(252, 100%, 86%);
+
+    /* S E C T I O N  C O L O R S */
+    --light-lavendar: hsl(262, 44%, 95%);
+    --baby-blue: hsl(214, 95%, 93%);
+    --light-moss: hsl(133, 33%, 95%);
+    --lemony: hsl(54deg 100% 92%);
+    --crab-cake: hsl(25, 57%, 91%);
+
+    /* T Y P O G R A P H Y */
+    --text-margin: 0px 0px;
+    --text-line-height: 160%;
+    --letter-spacing: 10px;
+
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    /* background-color: var(--lavendar); */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 10px 0;
+    color: var(--textColor);
+    background-color: var(--lemony);
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+}
+
+section {
+    padding: 10px 0 0 0;
+}
+
+.main {
+    background-color: var(--light-moss);
+    color: var(--textColor);
+    flex: 1;
+}
+
+.box {
+    /* width: 100%; */
+    height: 180px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: bisque;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1000px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .box {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+.light-lavender {
+    background-color: var(--light-lavendar);
+}
+
+.baby-blue {
+    background-color: var(--baby-blue);
+}
+
+.crab-cake {
+    background-color: var(--crab-cake);
+}
+
+footer {
+    padding: 10px 0;
+    background-color: var(--bubble-gum);
+    color: var(--textColor);
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+}
+
+p {
+    margin: var(--text-margin);
+    line-height: var(--text-line-height);
+    align-self: center;
+}
